@@ -52,6 +52,10 @@ class _ScreenWidgetState extends State<ScreenWidget> {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     return  Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        title: const Text('Sticky Notes'),
+      ),
       body:  Column(
         children: [
           const InputWidget(),
